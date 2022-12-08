@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Form Input Sample Page</title></head>
+    <body>
+        <div>
+            <form>
+                <div><h1>Form</h1></div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label for="pwd">password</label>
+                    <input type="password" name="pwd" id="pwd">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="num">Number</label>
+                    <input type="number" name="num" id="num">
+                </div>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="nativeDateTimePicker">
+                    <label for="party">Choose date and time</label>
+                    <input type="datetime-local">
+        
+                </div>
+                <div>
+                    <label for="salary">Choose your Salary</label>
+                    <input type="range" id="salary" name="salary" min="30000" max="600000" step="100" value="40000">
+                </div>
+                <div>
+                    <input type="button" value="submit">
+                </div>
+            </form>
+            <script>
+            const salary = document.querySelector('#salary');
+            const output = document.querySelector('.salary-output');
+            salary.addEventListener('input', function()
+            {
+                output.textContent = salary.value;
+            })
+        </script>
+
+        </div>
+        
+        
+    </body>
+    
+</html> 
